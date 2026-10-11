@@ -1,0 +1,135 @@
+/* Whole page: background colour, font and no extra space */
+body {
+  margin: 0;
+  background-color: #fff0f5;
+  color: #4a1d33;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+/* Smooth scrolling for anchor links; offset so sticky header does not cover headings */
+html {
+  scroll-behavior: smooth; 
+  scroll-padding-top: 80px;
+}
+
+/* Header: stays on top while scrolling */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px 15px;
+  background-color: white;
+  padding: 10px 20px;
+  border-bottom: 3px solid #ff7eb6;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+/* Menu links */
+.nav a {
+  color: #4a1d33;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 10px;
+  padding-bottom: 3px;
+}
+
+.nav a:hover {
+  color: #d6286f;
+  border-bottom: 2px solid #ff7eb6;
+}
+
+.shop-name {
+  font-family: 'Pacifico', cursive;
+  font-size: 30px;
+  color: #d6286f;
+  margin: 0 15px;
+}
+
+/* Hero section */
+.hero {
+  padding: 30px 15px;
+}
+
+.hero h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 40px;
+  color: #d6286f;
+}
+
+.hero-img {
+  width: 1200px;
+  max-width: 100%;
+  height:280px;
+  
+}
+
+/* Section headings */
+h2 {
+  font-family: 'Pacifico', cursive;
+  color: #d6286f;
+  font-size: 30px;
+}
+
+/* Product cards: inline-block puts the cards side by side */
+.card {
+  display: inline-block;
+  width: 260px;
+  background-color: white;
+  border: 2px solid #ffc0d9;
+  border-radius: 20px;
+  padding: 15px;
+  margin: 10px;
+}
+
+.card img {
+  width: 100%;
+}
+
+/* Buttons */
+button {
+  background-color: #d6286f;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ff7eb6;
+}
+
+/* How to wear steps */
+.steps {
+  background-color: white;
+  width: 80%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+/* Footer */
+.footer {
+  background-color: #ff7eb6;
+  color: white;
+  margin-top: 40px;
+  padding: 15px;
+}
+
+/* Footer links */
+.footer-links a {
+  color: white;
+  margin: 0 10px;
+}

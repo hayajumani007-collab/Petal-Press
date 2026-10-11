@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Petal Press</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 1. HEADER: logo, shop name, menu links and bag button -->
+  <div class="header">
+    <a href="#home" class="brand">
+      <img src="logo.svg" width="50" height="50" alt="Petal Press logo">
+      <span class="shop-name">Petal Press</span>
+    </a>
+    <nav class="nav">
+      <a href="#home">Home</a>
+      <a href="#nail-sets">Nail Sets</a>
+      <a href="#how-to-wear">How to Wear</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button id="bagCount" onclick="showBag()">Bag (0)</button>
+  </div>
+
+  <!-- 2. HERO: first thing the customer sees -->
+  <div class="hero" id="home">
+    <h1>Pretty nails in 2 minutes</h1>
+    <p>Ready-to-wear press-on nails. No salon, no waiting.</p>
+    <img class="hero-img" src="nail.png" alt="nails">
+  </div>
+
+  <!-- 3. PRODUCTS: each box is one nail set -->
+  <h2 id="nail-sets">Our Nail Sets</h2>
+  <div class="products">
+
+    <div class="card">
+      <img src="nail 3.png" alt="Burgundy Blossom">
+      <h3>Burgundy Blossom</h3>
+      <p>Rs 1,299</p>
+      <button onclick="addToBag()">Add to Bag</button>
+    </div>
+
+    <div class="card">
+      <img src="nail 1.png" alt="Daisy Blush">
+      <h3>Daisy Blush</h3>
+      <p>Rs 1,499</p>
+      <button onclick="addToBag()">Add to Bag</button>
+    </div>
+
+    <div class="card">
+      <img src="nail 2.png" alt="Buttercup Bloom">
+      <h3>Buttercup Bloom</h3>
+      <p>Rs 1,399</p>
+      <button onclick="addToBag()">Add to Bag</button>
+    </div>
+
+    <div class="card">
+      <img src="nail 4.png" alt="Midnight Elegance">
+      <h3>Midnight Elegance</h3>
+      <p>Rs 1,499</p>
+      <button onclick="addToBag()">Add to Bag</button>
+    </div>
+
+    <div class="card">
+      <img src="nail 5.png" alt="Butterfly Kisses">
+      <h3>Butterfly Kisses</h3>
+      <p>Rs 1,299</p>
+      <button onclick="addToBag()">Add to Bag</button>
+    </div>
+
+    <div class="card">
+      <img src="nail 6.png" alt="Lilac Dream">
+      <h3>Lilac Dream</h3>
+      <p>Rs 1,599</p>
+      <button onclick="addToBag()">Add to Bag</button>
+    </div>
+
+  </div>
+
+  <!-- 4. HOW TO WEAR -->
+  <h2 id="how-to-wear">How to wear them</h2>
+  <div class="steps">
+    <p>1. Wash your hands and clean your nails.</p>
+    <p>2. Pick the right size and stick on the glue tab.</p>
+    <p>3. Press for 30 seconds and you are ready!</p>
+  </div>
+
+  <!-- 5. FOOTER -->
+  <div class="footer" id="contact">
+    <img src="logo.svg" width="60" height="60" alt="Petal Press logo">
+    <p>Petal Press - Order on WhatsApp or Instagram</p>
+    <p class="footer-links">
+      <a href="#home">Home</a>
+      <a href="#nail-sets">Nail Sets</a>
+      <a href="#how-to-wear">How to Wear</a>
+    </p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
